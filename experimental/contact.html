@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+	<title>Contact us</title>
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link rel="icon" href="icon.png" type="image/x-icon">
+	<script type="text/javascript">
+	{
+		function bcheck()
+		{
+			var v1=document.getElementById("feedback").value;
+			if(v1=="")
+			document.getElementById("te").innerHTML="please enter some feedback";
+			else
+			document.getElementById("te").innerHTML="";
+						
+		}
+		function acheck()
+		{
+			var p=/^[A-Za-z]+[A-Za-z._,0-9]+@+[A-Za-z]+.+[A-Za-z]+$/;
+			var v2=document.getElementById("email").value;
+			if(v2=="")
+			document.getElementById("ee").innerHTML="please enter valid name";
+			else
+			document.getElementById("ee").innerHTML="";
+			
+			if(!p.test(v2))
+			document.getElementById("ee").innerHTML="please enter valid name";
+			else
+			document.getElementById("ee").innerHTML="";
+		}
+	}
+	</script>
+</head>
+<body>
+	<div id="header">
+		<h1>THE</h1>
+		<h2>CUISINE</h2>
+	</div>
+	<div id="nav">
+	<ul>
+		<li><a class="nav_a" href="home.html">HOME</a></li>
+		<li><a class="nav_a" href="login.html">LOGIN</a></li>
+		<li><a class="nav_a" href="reservation.html">BOOK</a></li>
+		<li><a class="nav_a" href="myres.html">MY BOOKINGS</a></li>
+		<li><a class="nav_a" href="tour.html">TOUR</a></li>
+		<li><a class="nav_a" href="rooms.html">OUR ROOMS</a></li>
+		<li><a class="nav_a" href="contact.html">CONTACT US</a></li>
+	</ul>
+	</div>
+	<div id="contentbox">
+		<div id="cardscontainer">
+			<div class="card2">
+				<img src="email.png" alt="restaurant" height="50px" width="50px"><br><br>
+				<h3> E-mail </h3>
+				<p> thecuisine@gmail.com</p><br><br>
+			</div>
+			<div class="card1">
+				<img src="loc.png" alt="service" height="50px" width="50px"><br><br>
+				<h3> Address </h3>
+				<p> Plot 216, Town Plan Scheme 1, Near Vastrapur Lake,<br> Vastrapur<br> Ahmedabad, India </p><br><br><br>
+			</div>
+			<div class="card3">
+				<img src="phone.png" alt="wifi" height="50px" width="50px"><br><br>
+				<h3> Phone Number </h3>
+				<p>079-2243188/99/66</p><br><br>
+			</div>	
+		</div>
+		<div class="card">
+			<a name="feedb"></a>
+			<h1>feedback form</h1>
+			<p>Suggestions, complaints or recommendations are always welcome.</p><hr width="90%"></br>
+			<form method="post">
+				<label for="email" class="input_label">E-MAIL ID</label><br><br>
+				<input class="login_input" type="text" id="email" name="emial" onblur="acheck();"><br><br><b id="ee" style="color:red"></b><br>
+				
+				<label for="pwd" class="input_label">WRITE YOUR FEEDBACK TO US: </label><br><br>
+				<textarea id="feedback" onblur="bcheck();"></textarea><br><br>  <!--will this get submitted with the form?--><b id="te" style="color:red"></b><br>
+				<input type="button" class="submit_button" value="submit feedback" ><br><br>
+		</div>
+	</div>
+	<div class="footer1">
+		Got any suggestions for us? Help us improve by providing feedback <a href="contact.html#feedb" style="text-decoration: none; font-weight: bold">HERE</a>
+	</div>
+	<div class="footer2">
+		<p>THE CUISINE - 2017 &#9400;. All rights reserved.</p>
+	</div>
+</body>
+</html>
+	
+		

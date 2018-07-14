@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+	<title>Book</title>
+	<link rel="stylesheet" type="text/css" href="reserve.css">
+	<link rel="icon" href="icon.png" type="image/x-icon">
+	<script>{
+		
+		
+		function acheck()
+		{
+			var p=/^[A-Za-z]+$/
+			var v1=document.getElementById("name").value;
+			
+			if(v1=="")
+			document.getElementById("ne").innerHTML="please enter valid name";
+			else
+			document.getElementById("ne").innerHTML="";
+			
+			if(!p.test(v1))
+			document.getElementById("ne").innerHTML="please enter valid name";
+			else
+			document.getElementById("ne").innerHTML="";
+
+			
+			
+		}
+		function bcheck()
+		{
+			var p=/^[A-Za-z]+$/
+			var v2=document.getElementById("lname").value;
+			if(v2=="")
+			document.getElementById("le").innerHTML="please enter valid name";
+			else
+			document.getElementById("le").innerHTML="";
+			
+			if(!p.test(v2))
+			document.getElementById("le").innerHTML="please enter valid name";
+			else
+			document.getElementById("le").innerHTML="";
+			
+		}
+		function ccheck()
+		{
+			var p=/^[A-Za-z]+[A-Za-z._,0-9]+@+[A-Za-z]+.+[A-Za-z]+$/;
+			var v3=document.getElementById("email").value;
+			if(v3=="")
+			document.getElementById("ee").innerHTML="please enter valid name";
+			else
+			document.getElementById("ee").innerHTML="";
+			
+			if(!p.test(v3))
+			document.getElementById("ee").innerHTML="please enter valid name";
+			else
+			document.getElementById("ee").innerHTML="";	
+		}
+	
+	
+	
+	
+	}
+	</script>
+</head>
+<body>
+	<div id="header">
+		<h1>THE</h1>
+		<h2>CUISINE</h2>
+	</div>
+
+	<div id="nav">
+	<ul>
+		<li><a class="nav_a" href="home.html">HOME</a></li>
+		<li><a class="nav_a" href="login.html">LOGIN</a></li>
+		<li><a class="nav_a" href="reservation.html">BOOK</a></li>
+		<li><a class="nav_a" href="myres.html">MY BOOKINGS</a></li>
+		<li><a class="nav_a" href="tour.html">TOUR</a></li>
+		<li><a class="nav_a" href="rooms.html">OUR ROOMS</a></li>
+		<li><a class="nav_a" href="contact.html">CONTACT US</a></li>
+	</ul>
+	</div>
+	<div id="contentbox">
+		<div id="bragging">
+			<p id="p1">We hope to see you in our paradise.</p>
+			<p id="p2">#LiveLikeKing</p>
+		</div>
+		
+		<div class="card">
+			<h1>Reservation form</h1><hr width="90%"><br>
+			<form method="post">
+				<label for="name" class="input_label">First Name:</label><br><br>
+				<input class="login_input" type="text" id="name" name="F_name" placeholder="for example: Jon" onblur="acheck();"><br><br><b id="ne" style="color:red"></b><br>
+				<label for="lname" class="input_label">Last Name:</label><br><br>
+				<input class="login_input" type="text" id="lname" name="S_name" placeholder="for example: Snow" onblur="bcheck();"><br><br><b id="le" style="color:red"></b><br>
+				<label for="email" class="input_label">Email:</label><br><br>
+				<input class="login_input" type="text" id="email" name="emial" placeholder="for example: jon.snow.bstd88@got.com" onblur="ccheck();"><br><b id="ee" style="color:red"></b><br>
+				
+				<label for="room" class="input_label">Id proof:</label><br><br><div class="r_buttons">
+				<div class="row"><input class="radios" type="radio" name="id" checked="checked"><span>Adhar Card</span></div>
+				<div class="row"><input class="radios" type="radio" name="id"><span>Driving Licence</span></div>
+				<div class="row"><input class="radios" type="radio" name="id"><span>Voter Id</span></div>
+				</div>
+				
+				<div class="r_buttons"><div class="row"><input type="file"><span id="chooseFile"><=== Upload a copy of your ID proof</span></div></div><br><br>
+				<label for="room" class="input_label">Type of room:</label><br><br><div class="r_buttons">
+				<div class="row"><input class="radios" type="radio" name="room" checked="checked"><span>Solo - Single</span></div>
+				<div class="row"><input class="radios" type="radio" name="room"><span>Solo - with Multicuisine Restaurant</span></div>
+				<div class="row"><input class="radios" type="radio" name="room"><span>Couple - Room only</span></div>
+				<div class="row"><input class="radios" type="radio" name="room"><span>Couple - with Multicuisine Restaurant</span></div>
+				<div class="row"><input class="radios" type="radio" name="room"><span>Family Fun</span></div>
+				<div class="row"><input class="radios" type="radio" name="room"><span>Honeymoon Suite</span></div><br><br><br></div>
+				<label for="pay" class="input_label">Mode of Payment:</label><br><br><div class="r_buttons">
+				<div class="row"><input class="radios" type="radio" name="pay" checked="checked"><span>Online&nbsp;(Debit Cards/ Credit Cards/ Net Banking)</span></div>
+				<div class="row"><input class="radios" type="radio" name="pay"><span>Cash on arrival</span></div><br><br><br>
+				</div>
+				
+				<input type="submit" class="submit_button" value="Proceed">
+		
+			</form>
+		</div>
+	</div>
+	<div class="footer1">
+		Got any suggestions for us? Help us improve by providing feedback <a href="contact.html#feedb" style="text-decoration: none; font-weight: bold">HERE</a>
+	</div>
+	<div class="footer2">
+		<p>THE CUISINE - 2017 &#9400;. All rights reserved.</p>
+	</div>
+</body>
+</html>

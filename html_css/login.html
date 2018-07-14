@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+	<title>Sign up</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="icon" href="icon.png" type="image/x-icon">
+	<script type="text/javascript">
+	{
+		function correctEmail(){
+			var v1=document.getElementById("name1").value;
+			var v3=v1.search("@");
+			if(v3==-1)
+				document.getElementById("wrongEmail").style.display = "block";
+			else if(v1=="")
+				document.getElementById("wrongEmail").style.display = "block";
+			else{
+				document.getElementById("wrongEmail").style.display = "block";
+				document.getElementById("wrongEmail").innerHTML = "That's better bitch!"
+			}
+		}
+		/*function empty()
+		{	
+			var v=document.getElementById("name").value;
+			if(v=="")
+				alert("Name Is Empty");
+			
+			
+			if(v1=="")
+				alert("Email Is Empty");
+				
+			var v2=document.getElementById("name2").value;
+			if(v2=="")
+				alert("Password Is Empty");
+
+			
+
+		}*/
+	}
+	</script>
+</head>
+<body>
+	<div id="header">
+		<h1>THE</h1>
+		<h2>CUISINE</h2>
+	</div>
+	<div id="nav">
+	<ul>
+		<li><a class="nav_a" href="home.html">HOME</a></li>
+		<li><a class="nav_a" href="login.html">LOGIN</a></li>
+		<li><a class="nav_a" href="reservation.html">BOOK</a></li>
+		<li><a class="nav_a" href="myres.html">MY BOOKINGS</a></li>
+		<li><a class="nav_a" href="tour.html">TOUR</a></li>
+		<li><a class="nav_a" href="rooms.html">OUR ROOMS</a></li>
+		<li><a class="nav_a" href="contact.html">CONTACT US</a></li>
+	</ul>
+	</div>
+	<div id="contentbox">
+		<div id="bragging">
+			<p id="p1">We hope to see you in our paradise.</p>
+			<p id="p2">#LiveLikeKing</p>
+		</div>
+		<div class="card">
+			<h1>sign up</h1><hr width="90%"></br>
+			<form method="post">
+				<label  for="name" class="input_label">NAME</label><br><br>
+				<input id="name" class="login_input" type="text" id="name" name="F_name"><br><br>
+				<label for="email" class="input_label">E-MAIL ID</label><br><br>
+				<input id="name1" class="login_input" type="text" id="email" name="email" onblur="correctEmail();"><br><br>
+				<p class="valid" id="wrongEmail">That's a fucking invalid e-mail address!!!</p>
+				<label for="pwd" class="input_label">CHOOSE A PASSWORD</label><br><br>
+				<input id="name2" class="login_input" type="password" id="pwd" name="password"><br><br>
+				<label for="dob" class="input_label">DATE OF BIRTH</label><br><br>
+				<input type="date" class="login_input" name="date"><br><br>
+				<label for="dob" class="input_label">GENDER</label><br><br>
+				<select class="login_input" name="gender">
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+				</select><br><br><br><br>
+				<input onClick="empty();" type="button" class="submit_button" value="submit"><br><br>
+				<p>Already a user? &nbsp; <a href="login2.html">LOGIN HERE</a> </p>
+		</div>
+	</div>
+	<div class="footer1">
+		Got any suggestions for us? Help us improve by providing feedback <a href="contact.html#feedb" style="text-decoration: none; font-weight: bold">HERE</a>
+	</div>
+	<div class="footer2">
+		<p>THE CUISINE - 2017 &#9400;. All rights reserved.</p>
+	</div>
+</body>
+</html>
+	
+		

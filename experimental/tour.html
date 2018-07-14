@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+	<title>Tour</title>
+	<link rel="stylesheet" type="text/css" href="tour.css">
+	<link rel="icon" href="icon.png" type="image/x-icon">
+	<script>
+	var i=0;
+	var images=[];
+	var time=3000;
+	images[0]='h1.jpg'
+	images[1]='h2.jpg'
+	images[2]='h3.jpg'
+	images[3]='h4.jpg'
+	images[4]='h5.jpg'
+	images[5]='h6.jpg'
+	images[6]='h7.jpg'
+	
+	function changeImg()
+	{
+		document.slide.src= images[i];
+		
+		if(i<images.length-1)
+		i++;
+		
+		else
+		i=0;
+		
+		setTimeout("changeImg()",time);		
+	}
+	window.onload=changeImg;
+
+
+</script>
+</head>
+<body>
+	<div id="header">
+		<h1>THE</h1>
+		<h2>CUISINE</h2>
+	</div>
+	<div id="nav">
+	<ul>
+		<li><a class="nav_a" href="home.html">HOME</a></li>
+		<li><a class="nav_a" href="login.html">LOGIN</a></li>
+		<li><a class="nav_a" href="reservation.html">BOOK</a></li>
+		<li><a class="nav_a" href="myres.html">MY BOOKINGS</a></li>
+		<li><a class="nav_a" href="tour.html">TOUR</a></li>
+		<li><a class="nav_a" href="rooms.html">OUR ROOMS</a></li>
+		<li><a class="nav_a" href="contact.html">CONTACT US</a></li>
+	</ul>
+	</div>
+	<div id="contentbox">
+			<div id="heading">
+				<p id="p1">Image Gallery</p>
+			</div>
+		<div id="picscontainer">
+			
+			<img name="slide" width="400" height="600">
+			
+			<div id="heading">
+			<p id="p1">Video Gallery</p>
+			</div>
+			<video id="vid" width="80%"  controls>
+						<source src="vid.mp4" type="video/mp4">
+						
+			</video>
+		</div>
+	</div>
+	<div class="footer1">
+		Got any suggestions for us? Help us improve by providing feedback <a href="contact.html#feedb" style="text-decoration: none; font-weight: bold">HERE</a>
+	</div>
+	<div class="footer2">
+		<p>THE CUISINE - 2017 &#9400;. All rights reserved.</p>
+	</div>
+</body>
+</html>
+	
+		

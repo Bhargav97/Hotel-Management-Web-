@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+	<title>THE CUISINE</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="icon" href="icon.png" type="image/x-icon">
+	<script type="text/javascript">
+		function hidead()
+		{
+			document.getElementById("adcontainer").style.background="linear-gradient(to right, #813772, #B82601)";
+			document.getElementById("adcontainer").style.opacity="1.0";
+			document.getElementById("ad").style.display="none";
+			document.getElementById("adbutton").style.display="none";
+			
+		}
+	</script>
+</head>
+<body>
+	<div id="adcontainer">
+	<img src="close_button.png" id="adbutton" onclick="hidead()">
+	<a href="adpage.html" target="_blank" onclick="hidead()" ><div id="ad">
+		<img src="ad.jpg">
+	</div></a>
+	<div id="header">
+		<h1>THE</h1>
+		<h2>CUISINE</h2>
+	</div>
+	<div id="nav">
+	<ul>
+		<li><a class="nav_a" href="home.html">HOME</a></li>
+		<li><a class="nav_a" href="login.html">LOGIN</a></li>
+		<li><a class="nav_a" href="reservation.html">BOOK</a></li>
+		<li><a class="nav_a" href="myres.html">MY BOOKINGS</a></li>
+		<li><a class="nav_a" href="tour.html">TOUR</a></li>
+		<li><a class="nav_a" href="rooms.html">OUR ROOMS</a></li>
+		<li><a class="nav_a" href="contact.html">CONTACT US</a></li>
+	</ul>
+	</div>
+	<div id="contentbox">
+		<div id="bragging">
+			<p id="p1">Your home away from home</p>
+			<p id="p2">#LiveLikeKing</p>
+		</div>
+		<hr width="66%">
+		<div id="cardscontainer">
+			<div class="card1">
+				<img src="service.png" alt="service" height="50px" width="50px"><br><br>
+				<h3> GREAT SERVICE </h3>
+				<p> We're here to help you, 24/7</p><br><br></br>
+			</div>
+			<div class="card2">
+				<img src="restaurant.png" alt="restaurant" height="50px" width="50px"><br><br>
+				<h3> MULTI-CUISINE RESTAURANT </h3>
+				<p> Whether you love Mexican, Italian or Indian, We've got you covered.</p><br><br>
+			</div>
+			<div class="card3">
+				<img src="wifi.png" alt="wifi" height="50px" width="50px"><br><br>
+				<h3> TOP-CLASS AMMENITIES </h3>
+				<p> Wi-Fi? Swimming Pool? Gym? Newsstand? You got it all.</p><br><br>
+			</div>
+	<!--
+		<div class="card2">
+			<form>
+				<label for="email" class="login">E-mail ID:</label><br><br>
+				<input class="login_input" type="text" id="email" name="email" placeholder="eg:abc@xyz.com"><br><br><br>
+				<label for="pwd" class="login">Password:</label><br><br>
+				<input class="login_input" type="password" id="pwd" name="pwd" placeholder="*******"><br><br><br>
+				<input type="submit" class="sub" value="Log in">
+		</div>
+	-->	
+	</div>
+	<div class="footer1">
+		Got any suggestions for us? Help us improve by providing feedback <a href="contact.html#feedb" style="text-decoration: none; font-weight: bold">HERE</a>
+	</div>
+	<div class="footer2">
+		<p>THE CUISINE - 2017 &#9400;. All rights reserved.</p>
+	</div>
+	</div>
+</body>
+</html>
+	
+		

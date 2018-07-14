@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="icon" href="icon.png" type="image/x-icon">
+	<script>
+	{
+		function bcheck()
+		{
+			var v1=document.getElementById("pwd").value;
+			if(v1=="")
+			{
+				document.getElementById("pe").innerHTML="please enter valid password";
+			}
+			else
+			{
+				document.getElementById("pe").innerHTML="";
+			}			
+		}
+		function acheck()
+		{
+			var v2=document.getElementById("email").value;
+			if(v2=="")
+			{
+				document.getElementById("ee").innerHTML="please enter valid emial";
+			}
+			else
+			{
+				document.getElementById("ee").innerHTML="";
+			}	
+		}
+	}
+	</script>
+</head>
+<body>
+	<div id="header">
+		<h1>THE</h1>
+		<h2>CUISINE</h2>
+	</div>
+	<div id="nav">
+	<ul>
+		<li><a class="nav_a" href="home.html">HOME</a></li>
+		<li><a class="nav_a" href="login.html">LOGIN</a></li>
+		<li><a class="nav_a" href="reservation.html">BOOK</a></li>
+		<li><a class="nav_a" href="myres.html">MY BOOKINGS</a></li>
+		<li><a class="nav_a" href="tour.html">TOUR</a></li>
+		<li><a class="nav_a" href="rooms.html">OUR ROOMS</a></li>
+		<li><a class="nav_a" href="contact.html">CONTACT US</a></li>
+	</ul>
+	</div>
+	<div id="contentbox">
+		<div id="bragging">
+			<p id="p1">We hope to see you in our paradise.</p>
+			<p id="p2">#LiveLikeKing</p>
+		</div>
+		<div class="card">
+			<h1>login</h1><hr width="90%"></br>
+			<form method="post">
+				<label for="email" class="input_label">E-MAIL ID</label><br><br>
+				<input class="login_input" type="text" id="email" name="emial" onblur="acheck();"><br>	<br><b style="color:red" id="ee"></b><br>		<br>
+				<label for="pwd" class="input_label">PASSWORD</label><br><br>
+				<input class="login_input" type="password" id="pwd" name="password" onblur="bcheck();"><br><br><b id="pe"></b><br><b style="color:red" id="pe"></b><br>
+				<input type="button" class="submit_button" value="submit"><br><br>
+		</div>
+	</div>
+	<div class="footer1">
+		Got any suggestions for us? Help us improve by providing feedback <a href="contact.html#feedb" style="text-decoration: none; font-weight: bold">HERE</a>
+	</div>
+	<div class="footer2">
+		<p>THE CUISINE - 2017 &#9400;. All rights reserved.</p>
+	</div>
+</body>
+</html>
+	
+		
